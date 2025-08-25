@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "dish": "Veal Shoulder",
+    "description": "This dish is fit for a Pharaoh. Using ancient Egyptian recipes, Veal shoulder roasted to perfection with an assortment of fresh vegetables, spices, dates and figs. Cutlery is optional and finger licking is allowed. Accompanied with rice, ”molokheya” and salads so your table becomes a feast that only a king should expect.",
+    "price": 40,
+    "min": 1,
+    "max": null
+  },
+  {
+    "id": 2,
+    "dish": "zA Beef mega ribs",
+    "description": "This dish is fit for a Pharaoh. Using ancient Egyptian recipes, beef ribs are slow cooked to perfection with an assortment of fresh vegetables, spices, dates and figs. Cutlery is optional and finger licking is allowed. Accompanied with rice, ”molokheya” and salads so your table becomes a feast that only a king should expect.",
+    "price": 40,
+    "min": 1,
+    "max": null
+  },
+  {
+    "id": 3,
+    "dish": "Za Ox Tail",
+    "description": "This dish is fit for a Pharaoh. Using ancient Egyptian recipes, Ox tail chunks are slow-cooked to perfection with an assortment of fresh vegetables, spices, dates and figs. Cutlery is optional and finger licking is allowed. Accompanied with rice, ”molokheya” and salads so your table becomes a feast that only a king should expect.",
+    "price": 40,
+    "min": 1,
+    "max": null
+  },
+  {
+    "id": 4,
+    "dish": "zA Turkey frenzy",
+    "description": "This dish is fit for a Pharaoh. Using ancient Egyptian recipes, Turkey legs are roasted to perfection with an assortment of fresh vegetables, spices, dates and figs. Cutlery is optional and finger licking is allowed. Accompanied with rice, ”molokheya” and salads so your table becomes a feast that only a king should expect.",
+    "price": 40,
+    "min": 2,
+    "max": null
+  },
+  {
+    "id": 5,
+    "dish": "zA Beef Leg",
+    "description": "This dish is fit for a Pharaoh. Suitable for a minimum of 3 or 4 diners. Using ancient Egyptian recipes, meat is roasted to perfection with an assortment of fresh vegetables, spices, dates and figs. Cutlery is optional and finger licking is allowed. Accompanied with rice, ”molokheya” and salads so your table becomes a feast that only a king should expect.",
+    "price": 40,
+    "min": 4,
+    "max": null
+  },
+  {
+    "id": 6,
+    "dish": "Lamb shoulder",
+    "description": "This dish is fit for a Pharaoh. Using ancient Egyptian recipes, Lamb shoulder, considered the juiciest cut, roasted to perfection with an assortment of fresh vegetables, spices, dates and figs. Cutlery is optional and finger licking is allowed. Accompanied with rice, ”molokheya” and salads so your table becomes a feast that only a king should expect.",
+    "price": 50,
+    "min": 2,
+    "max": 100
+  },
+  {
+    "id": 7,
+    "dish": "zA ultimate fish fillet (Salmon)",
+    "description": "A Roman portion of salmon fillet roasted and served on a bed of wheat germ and salad.",
+    "price": 60,
+    "min": 1,
+    "max": null
+  },
+  {
+    "id": 8,
+    "dish": "zA Ultimate fish fillet (Perch)",
+    "description": "A Roman portion of perch fillet roasted and served on a bed of wheat germ and salad.",
+    "price": 80,
+    "min": 1,
+    "max": null
+  },
+  {
+    "id": 9,
+    "dish": "Vegetarian banquet",
+    "description": "Sautéed vegitable, rice stuffed vegetables, bulgar wheat, potato kofta, rice & Molokheya tagen (Green lagoon) and fresh salad.",
+    "price": 30,
+    "min": 1,
+    "max": 100
+  }
+]

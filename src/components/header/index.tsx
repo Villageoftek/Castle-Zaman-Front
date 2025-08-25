@@ -1,0 +1,19 @@
+import { Link } from "react-router";
+import SwitchButton from "../switchButton";
+import useThemeState from "@/state/theme";
+
+export default function Header() {
+  const toggleTheme = useThemeState((state) => state.toggleTheme);
+
+  return (
+    <header>
+      <div className="container flex items-center justify-between my-4">
+        <Link to="/" className="w-40 h-fit">
+          <img src="/images/logo.png" alt="castle zaman" className="w-full" />
+        </Link>
+        {/* <h1 className="capitalize text-2xl">Our Menu</h1> */}
+        <SwitchButton onClick={toggleTheme} />
+      </div>
+    </header>
+  );
+}

@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --default-transition-duration: 200ms;
+  --spacing-fill: -webkit-fill-available;
+
+  --color-primary: #4d0a05;
+}
+
+@utility container {
+  @apply mx-auto px-8;
+}
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+@utility truncate {
+  @apply w-fit max-w-full;
+}
+
+@utility bg-body {
+  @apply bg-white dark:bg-slate-900;
+}
+@utility text-body {
+  @apply text-slate-900 dark:text-slate-50;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    @media (max-width: 768px) { font-size: 15px; }
+    @media (max-width: 640px) { font-size: 14px; }
+    @media (max-width: 450px) { font-size: 13px; }
+  }
+  body {
+    @apply bg-body text-body font-sans antialiased;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+  img {
+    @apply max-w-full;
+  }
+  [disabled] {
+    @apply cursor-not-allowed opacity-50 pointer-events-none;
+  }
+}
