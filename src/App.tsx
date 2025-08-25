@@ -8,7 +8,7 @@ import Success from "./pages/success";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/castle-zaman-menu">
       <Routes>
         <Route path="/" element={<AppLayout />}>
           <Route index element={<Home />} />
@@ -22,3 +22,5 @@ export default function App() {
     </BrowserRouter>
   );
 };
+
+
