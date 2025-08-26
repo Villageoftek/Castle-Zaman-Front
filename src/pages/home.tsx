@@ -6,7 +6,7 @@ import useMealsQuery from "../queres/getAllMeals";
 import { useState } from "react";
 
 export default function Home() {
-  const { guests, setGuests, date, setDate, time, setTime, email, setEmail, orders } =
+  const { totalOrders, guests, setGuests, date, setDate, time, setTime, email, setEmail, orders } =
     useOrdersState((state) => state);
   const to = useNavigate();
   const { data } = useMealsQuery();
@@ -55,7 +55,7 @@ export default function Home() {
 
   return (
     <div className="my-8">
-      <div className="flex flex-col items-start my-12 divide-y divide-gray-700 dark:divide-gray-200 *:odd:bg-gray-100 dark:*:odd:bg-gray-800 *:even:bg-gray-300 dark:*:even:bg-gray-700">
+      <div className="flex flex-col items-start my-12 divide-y divide-gray-700 dark:divide-gray-200 *:odd:bg-white dark:*:odd:bg-gray-800 *:even:bg-grr dark:*:even:bg-gray-700">
         {meals.map((item: Meal) => (
           <MenuItem key={item.id} menuItem={item} />
         ))}
@@ -114,6 +114,16 @@ export default function Home() {
           </div>
           {emailError && <p className="text-red-500 text-sm pl-40">{emailError}</p>}
         </div>
+
+
+        <div className=" mt-8 text-2xl   ">
+           <span className="font-serif text-heder dark:text-red-600">
+            Total charge: 
+          </span>
+          <span>
+            {totalOrders().toFixed(2)}
+          </span>
+        </div>
       </div>
 
       {/* Buttons */}
@@ -124,7 +134,7 @@ export default function Home() {
           disabled={isNextDisabled}
           className={`py-1.5 px-4 rounded-md text-lg font-medium text-slate-100 transition-all ml-auto ${isNextDisabled
             ? "bg-gray-400 cursor-not-allowed"
-            : "bg-blue-700 hover:bg-blue-800"
+            : "bg-blue-700 hover:bg-blue-800 "
             }`}
         >
           Next

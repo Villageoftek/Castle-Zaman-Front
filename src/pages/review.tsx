@@ -34,6 +34,7 @@ export default function ReviewPage() {
   const { orders, totalOrders, guests, date, time, email } = useOrdersState(
     (state) => state
   );
+
   const [orderData, setOrderData] = useState<StoredSession | null>(null);
   useEffect(() => {
     const data = sessionStorage.getItem("orders-storage");

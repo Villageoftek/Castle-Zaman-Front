@@ -47,7 +47,7 @@ export default function SwitchButton({ className = "", value, onChange, onClick 
           onClick={handleToggle}
         />
         <span
-          className={` text-gray-700 text-md font-bold`}>
+          className={` text-gray-700 dark:text-white text-md font-bold`}>
           {toggle ? "Dark Mode" : "Light Mode"}
         </span>
       </div>

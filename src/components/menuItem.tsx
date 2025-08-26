@@ -14,12 +14,24 @@ export default function MenuItem({ menuItem: item }: { menuItem: Meal }) {
     decQty(item.id);
   };
   return (
-    <div className="flex itms-center gap-6 p-4 my-2 w-full">
+    <div className="flex items-center gap-6 p-4 my-2 w-full shadow-md">
       <div className="flex flex-col items-center gap-2">
-        <button
+        {/* <button
           type="button"
           onClick={handleInc}
           disabled={item.maximum_quantity !== null && qty >= item.maximum_quantity}
+          className="size-8 rounded-full flex-center bg-emerald-700 text-slate-100"
+        >
+          <FaPlus />
+        </button> */}
+        <button
+          type="button"
+          onClick={handleInc}
+          disabled={
+            item.maximum_quantity !== null &&
+            item.maximum_quantity > 0 && 
+            qty >= item.maximum_quantity
+          }
           className="size-8 rounded-full flex-center bg-emerald-700 text-slate-100"
         >
           <FaPlus />
@@ -40,7 +52,7 @@ export default function MenuItem({ menuItem: item }: { menuItem: Meal }) {
       </div>
 
       <div>
-        <h2 className="uppercase text-2xl font-semibold underline">{item.name}</h2>
+        <h2 className="uppercase text-2xl font-semibold //underline text-heder dark:text-white">{item.name}</h2>
         <p>{item.description}</p>
         <p>Price: <span className="font-medium">${item.price.toFixed(2)}</span></p>
         {item.minimum_quantity !== null && (

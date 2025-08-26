@@ -7,6 +7,10 @@
   --spacing-fill: -webkit-fill-available;
 
   --color-primary: #4d0a05;
+  --color-heder: #612018;
+  --color-textLight:#612018;
+  --color-textDark:#eaeaea;
+  --color-grr:#eceaea;
 }
 
 @utility container {
