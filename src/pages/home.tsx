@@ -117,11 +117,12 @@ export default function Home() {
 
 
         <div className=" mt-8 text-2xl   ">
-           <span className="font-serif text-heder dark:text-red-600">
+           <span className="font-serif text-heder dark:text-white">
             Total charge: 
           </span>
           <span>
-            {totalOrders().toFixed(2)}
+            {totalOrders() <= 0 ? "" : totalOrders().toFixed(2)}
+            {/* {totalOrders().toFixed(2)} */}
           </span>
         </div>
       </div>

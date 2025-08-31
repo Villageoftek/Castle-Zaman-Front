@@ -5,6 +5,7 @@ import Terms from "./pages/terms";
 import ReviewPage from "./pages/review";
 import Checkout from "./pages/checkout";
 import Success from "./pages/success";
+import Failed from "./pages/Failed";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="review" element={<ReviewPage />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="success" element={<Success />} />
+          <Route path="failed" element={<Failed />} />
           <Route path="*" element={<div className="text-center my-20">404 | Page Not Found</div>} />
         </Route>
       </Routes>
