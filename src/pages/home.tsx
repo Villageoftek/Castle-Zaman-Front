@@ -6,15 +6,12 @@ import useMealsQuery from "../queres/getAllMeals";
 import { useState } from "react";
 
 export default function Home() {
-  const { totalOrders, guests, setGuests, date, setDate, time, setTime, email, setEmail, orders } =
-    useOrdersState((state) => state);
+  const { totalOrders, guests, setGuests, date, setDate, time, setTime, email, setEmail, orders } = useOrdersState((state) => state);
   const to = useNavigate();
   const { data } = useMealsQuery();
   const meals = data.data;
   const today = new Date().toISOString().split("T")[0];
   const getTimeString = (date: Date) => date.toTimeString().slice(0, 5);
-
-  //  state للـ email error
   const [emailError, setEmailError] = useState("");
 
   const handleGuestsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -116,13 +113,12 @@ export default function Home() {
         </div>
 
 
-        <div className=" mt-8 text-2xl   ">
+        <div className="mt-8 text-2xl space-x-4">
            <span className="font-serif text-heder dark:text-white">
             Total charge: 
           </span>
           <span>
-            {totalOrders() <= 0 ? "" : totalOrders().toFixed(2)}
-            {/* {totalOrders().toFixed(2)} */}
+            ${totalOrders() <= 0 ? "" : totalOrders().toFixed(2)}
           </span>
         </div>
       </div>

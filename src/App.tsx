@@ -9,7 +9,7 @@ import Failed from "./pages/Failed";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/castle-zaman-menu">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<AppLayout />}>
           <Route index element={<Home />} />

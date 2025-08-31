@@ -16,7 +16,7 @@ import axios from "axios";
 // export const urlBase = import.meta.env.VITE_API_BASE_URL || "https://castle-panel.wassalha.net/api/en/";
 
 export const apiBase = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "https://castle-panel.wassalha.net/api/en/",
+  baseURL: import.meta.env.VITE_API_BASE_URL || "https://orders.castlezaman.com/backend/public/api/en/",
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",
