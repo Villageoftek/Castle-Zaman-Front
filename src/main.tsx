@@ -3,20 +3,21 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import App from "./App";
+import Loading from "./components/loading";
 
 const queryClient = new QueryClient();
 
 declare global {
   interface ImportMeta {
-    env: {
+    ImportMetaEnv: {
       VITE_API_BASE_URL: string;
-    };
+    }
   }
 }
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div className="min-h-screen min-w-screen flex-center"><Loading /></div>}>
       <QueryClientProvider client={queryClient}>
         <div className="min-h-screen">
           <App />
